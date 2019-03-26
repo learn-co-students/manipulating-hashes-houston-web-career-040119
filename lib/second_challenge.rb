@@ -7,7 +7,12 @@ def second_challenge
   }
 
   #code your solution here!
-
-  
+  grocery_list = []
+  groceries.each do |dept, data|
+    data.each do |item|
+      grocery_list << "#{item}"
+    end
+  end
+  grocery_list
 
 end
